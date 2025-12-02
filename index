@@ -1,0 +1,15 @@
+<?php
+
+echo "Banka";
+
+require_once "BankAccount.php";
+
+$owners = new BankAccount("Niks", 99.99);
+$owners -> deposit(30);
+$owners-> printInfo() . "<br>";
+
+$owners = new BankAccount("Edijs", 99.99);
+$owners -> withdraw(33);
+$owners-> printInfo() . "<br>";
+
+?>
